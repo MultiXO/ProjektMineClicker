@@ -41,12 +41,20 @@ Buildings
 	*TEMPLATE
 		on click:anim glow
  
-	*Pickaxe|Pickaxes
-		name:Pickaxe|Pickaxes
-		desc:A normal Pickaxe.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.
+	*Miner|Miners
+		name:Miner|Miners
+		desc:Digs up Gold for you.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.
 		icon:icons[0,0]
 		cost:15 Gold
 		on tick:yield 0.1 Gold
+		unlocked
+
+	*Ork|Orks
+		name:Ork|Orks
+		desc:Stronger than a normal miner.<//><b>Effect:</b><.>Produces 1 Gold every 1 seconds.
+		icon:icons[0,0]
+		cost:150 Gold
+		on tick:yield 1 Gold
 		unlocked
  
 Upgrades
