@@ -10,7 +10,7 @@ Settings
 	background:ProjektMineClicker/grey_background.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, ProjektMineClicker/Assets/Icons.jpg
+	spritesheet:icons, 48 by 48, ProjektMineClicker/Icons.jpg
 	stylesheet:ProjektMineClicker/Style.css
  
 Layout
