@@ -36,6 +36,12 @@ Resources
 		icon:icons[0,1]
 		class:noBackground
 		show earned
+	*Diamond|Diamonds
+		name:Diamond|Diamonds
+		desc:These are amount of Diamonds you have. You can use them to purchase things.
+		icon:icons[0,1]
+		class:noBackground
+		show earned
  
 Buildings
 	*TEMPLATE
@@ -51,10 +57,11 @@ Buildings
 
 	*Ork|Orks
 		name:Ork|Orks
-		desc:Stronger than a normal miner.<//><b>Effect:</b><.>Produces 1 Gold every 1 seconds.
+		desc:Stronger than a normal miner.<//><b>Effect:</b><.>Produces 1 Gold every 1 seconds. Also produces 1 Diamond every 10 seconds.
 		icon:icons[0,0]
 		cost:150 Gold
 		on tick:yield 1 Gold
+		on tick:yield 0.1 Diamond
 		unlocked
  
 Upgrades
