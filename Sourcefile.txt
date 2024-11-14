@@ -7,7 +7,7 @@ Let's make a game!
 	version:0.01
  
 Settings
-	background:ProjektMineClicker/grey_background.png
+	background:ProjektMineClicker/grey_background.jpg
 	building cost increase:115%
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, ProjektMineClicker/Icons.png
