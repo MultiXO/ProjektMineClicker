@@ -48,7 +48,7 @@ Buildings
  
 	*Miner|Miners
 		name:Miner|Miners
-		desc:Digs up Gold for you.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.test
+		desc:Digs up Gold for you.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.testtest
 		icon:ProjektMineClicker/Pickaxe_Button.png
 		cost:15 Gold
 		on tick:yield 0.1 Gold
