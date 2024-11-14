@@ -56,7 +56,7 @@ Buildings
 
 	*Ork|Orks
 		name:Ork|Orks
-		desc:Stronger than a normal miner.<//><b>Effect:</b><.>Produces 1 Gold every 1 seconds. Also produces 1 Diamond every 10 seconds.
+		desc:Stronger than a normal miner.<//><b>Effect:</b><.>Produces 1 Gold every 1 seconds. Also produces 1 Diamond every 10 seconds.test
 		icon:icons[0,0]
 		cost:150 Gold
 		on tick:yield 1 Gold
