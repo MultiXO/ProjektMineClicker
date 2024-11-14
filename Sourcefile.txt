@@ -1,0 +1,62 @@
+Let's make a game!
+	name:ProjektMineClicker
+	author:Multi
+	desc:A simple Miner Clicker Game
+	created:13/11/24
+	updated:13/11/24
+	version:0.01
+ 
+Settings
+	background:Assets/grey_background.jpg
+	building cost increase:115%
+	building cost refund:50%
+	spritesheet:icons, 48 by 48, Assets/Icons.jpg
+	stylesheet:Style.css
+ 
+Layout
+	use default
+ 
+Buttons
+	*PickaxeButton
+		name:Mine
+		desc:Gonna start somewhere!
+		on click:anim icon wobble
+		on click:yield 1 Gold
+		icon:Assets/Pickaxe_Button.jpg
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
+ 
+Resources
+	*Gold
+		name:Gold
+		desc:These are amount of Gold you have. You can use them to purchase things.
+		icon:icons[0,1]
+		class:noBackground
+		show earned
+ 
+Buildings
+	*TEMPLATE
+		on click:anim glow
+ 
+	*Pickaxe|Pickaxes
+		name:Pickaxe|Pickaxes
+		desc:A normal Pickaxe.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.
+		icon:icons[0,0]
+		cost:15 Gold
+		on tick:yield 0.1 Gold
+		unlocked
+ 
+Upgrades
+	*TEMPLATE
+		on click:anim glow
+ 
+	*Pickaxeu1
+		name:Slightly better Pickaxe
+		desc:This Pickaxe is a bit more powerfull than the standard.<//><b>Effect:</b><.>+1 Gold/click
+		icon:icons[1,0]
+		cost:100 Gold
+		passive:increase Gold yield of PickaxeButton by 1
+		req:10 Gold:earned
