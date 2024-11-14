@@ -7,10 +7,11 @@ Let's make a game!
 	version:0.01
  
 Settings
-	background:Assets/grey_background.jpg
+	background:ProjektMineClicker/Assets/grey_background.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, Assets/Icons.jpg
+	spritesheet:icons, 48 by 48, ProjektMineClicker/Assets/Icons.jpg
+	stylesheet:ProjektMineClicker/Style.css
  
 Layout
 	use default
@@ -21,7 +22,7 @@ Buttons
 		desc:Gonna start somewhere!
 		on click:anim icon wobble
 		on click:yield 1 Gold
-		icon:Assets/Pickaxe_Button.jpg
+		icon:ProjektMineClicker/Assets/Pickaxe_Button.jpg
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
