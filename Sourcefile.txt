@@ -22,7 +22,7 @@ Buttons
 		desc:Gonna start somewhere!
 		on click:anim icon wobble
 		on click:yield 1 Gold
-		icon:ProjektMineClicker/Assets/Pickaxe_Button.jpg
+		icon:ProjektMineClicker/Pickaxe_Button.jpg
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
