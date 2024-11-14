@@ -7,10 +7,10 @@ Let's make a game!
 	version:0.01
  
 Settings
-	background:ProjektMineClicker/grey_background.jpg
+	background:ProjektMineClicker/grey_background.png
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, ProjektMineClicker/Icons.jpg
+	spritesheet:icons, 48 by 48, ProjektMineClicker/Icons.png
  
 Layout
 	use default
@@ -21,7 +21,7 @@ Buttons
 		desc:Gonna start somewhere!
 		on click:anim icon wobble
 		on click:yield 1 Gold
-		icon:ProjektMineClicker/Pickaxe_Button.jpg
+		icon:ProjektMineClicker/Pickaxe_Button.png
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
@@ -49,7 +49,7 @@ Buildings
 	*Miner|Miners
 		name:Miner|Miners
 		desc:Digs up Gold for you.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.
-		icon:ProjektMineClicker/Pickaxe_Button.jpg
+		icon:ProjektMineClicker/Pickaxe_Button.png
 		cost:15 Gold
 		on tick:yield 0.1 Gold
 		unlocked
