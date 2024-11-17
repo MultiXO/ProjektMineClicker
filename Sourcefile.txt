@@ -11,7 +11,7 @@ Settings
 	building cost increase:115%
 	building cost refund:50%
 	spritesheet:buildings, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/buildings.jpg
-	spritesheet:currency, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/buildings.jpg
+	spritesheet:currency, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/currency.jpg
 	stylesheet:Style.css
  
 Layout
@@ -40,7 +40,7 @@ Resources
 	*Diamond|Diamonds
 		name:Diamond|Diamonds
 		desc:These are amount of Diamonds you have. You can use them to purchase things.
-		icon:currency[0,1]
+		icon:currency[1,0]
 		class:noBackground
 		show earned
  
@@ -59,7 +59,7 @@ Buildings
 	*Ork|Orks
 		name:Ork|Orks
 		desc:Stronger than a normal miner.<//><b>Effect:</b><.>Produces 1 Gold every 1 seconds. Also produces 1 Diamond every 10 seconds.
-		icon:buildings[0,1]
+		icon:buildings[1,0]
 		cost:150 Gold
 		on tick:yield 1 Gold
 		on tick:yield 0.1 Diamond
