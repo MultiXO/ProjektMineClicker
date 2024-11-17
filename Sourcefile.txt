@@ -3,7 +3,7 @@ Let's make a game!
 	author:Multi
 	desc:A simple Miner Clicker Game
 	created:13/11/24
-	updated:13/11/24
+	updated:17/11/24
 	version:0.01
  
 Settings
@@ -20,7 +20,7 @@ Layout
 Buttons
 	*PickaxeButton
 		name:Mine
-		desc:Gonna start somewhere!
+		desc:Let's mine!
 		on click:anim icon wobble
 		on click:yield 1 Gold
 		icon: 140 by 140, https://multixo.github.io/ProjektMineClicker/Assets/Pickaxe_Button.jpg
