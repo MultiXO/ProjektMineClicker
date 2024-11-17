@@ -10,8 +10,6 @@ Settings
 	background:https://multixo.github.io/ProjektMineClicker/Assets/grey_background.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:currency, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/currency.jpg
-	spritesheet:buildings, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/buildings.jpg
 	stylesheet:Style.css
  
 Layout
