@@ -22,7 +22,7 @@ Buttons
 		desc:Gonna start somewhere!
 		on click:anim icon wobble
 		on click:yield 1 Gold
-		icon:ProjektMineClicker/Pickaxe_Button.png
+		icon:https://multixo.github.io/ProjektMineClicker/Pickaxe.png
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
