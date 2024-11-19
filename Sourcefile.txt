@@ -38,12 +38,16 @@ Resources
 		icon:currency[0,0]
 		class:noBackground
 		show earned
-	*Diamond|Diamonds
+	*Diamond
 		name:Diamond|Diamonds
 		desc:These are amount of Diamonds you have. You can use them to purchase things.
 		icon:currency[1,0]
 		class:noBackground
 		show earned
+	*GoldMultiplier
+		name: Gold multiplier
+		desc: Shows the current multiplier for gold gains.
+		show max
  
 Buildings
 	*TEMPLATE
@@ -54,7 +58,7 @@ Buildings
 		desc:Digs up Gold for you.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.
 		icon:buildings[0,0]
 		cost:15 Gold
-		on tick:yield 0.1 Gold
+		on tick:yield GoldMultiplier * 0.1 Gold
 		unlocked
 
 	*Expert
@@ -62,7 +66,8 @@ Buildings
 		desc:Has the knowledge to mine more efficiently.<//><b>Effect:</b><.>Produces 1 Gold every second.
 		icon:buildings[1,0]
 		cost:150 Gold
-		on tick:yield 1 Gold
+		on tick:yield GoldMultiplier * 1 Gold
+		on tick: yield random(0,10) * 0.001 Diamond 
 		unlocked
 
 	*SideManager
@@ -70,7 +75,8 @@ Buildings
 		desc:Oversees the mining site .<//><b>Effect:</b><.>Produces 10 Gold every second.
 		icon:buildings[2,0]
 		cost:5000 Gold
-		on tick:yield 10 Gold
+		on tick:yield GoldMultiplier * 10 Gold
+		on tick: yield random(0,10) * 0.01 Diamond 
 		unlocked
 
 	*RegionalManager
@@ -78,7 +84,8 @@ Buildings
 		desc:Manage all mining sites in the region.<//><b>Effect:</b><.>Produces 1 Gold every 100 seconds.
 		icon:buildings[3,0]
 		cost:100000 Gold
-		on tick:yield 100 Gold
+		on tick:yield GoldMultiplier * 100 Gold
+		on tick: yield random(0,10) * 0.1 Diamond 
 		unlocked
  
 Upgrades
@@ -97,4 +104,4 @@ Items
 	*pickaxe
 		name:A basic pickaxe
 		desc:A normal pickaxe. 1.1 x multiplier for Gold gains.
-		passive:grant 3 attack
+		passive:GoldMultiplier is 1.1
