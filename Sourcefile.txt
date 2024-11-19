@@ -67,7 +67,7 @@ Buildings
 		icon:buildings[1,0]
 		cost:150 Gold
 		on tick:yield GoldMultiplier * 1 Gold
-		on tick: yield random(0,10) * 0.001 Diamond 
+		on tick: yield random(0,10) 0.001 Diamond 
 		unlocked
 
 	*SideManager
@@ -76,7 +76,7 @@ Buildings
 		icon:buildings[2,0]
 		cost:5000 Gold
 		on tick:yield GoldMultiplier * 10 Gold
-		on tick: yield random(0,10) * 0.01 Diamond 
+		on tick: yield random(0,10) 0.01 Diamond 
 		unlocked
 
 	*RegionalManager
@@ -85,7 +85,7 @@ Buildings
 		icon:buildings[3,0]
 		cost:100000 Gold
 		on tick:yield GoldMultiplier * 100 Gold
-		on tick: yield random(0,10) * 0.1 Diamond 
+		on tick: yield random(0,10) 0.1 Diamond 
 		unlocked
  
 Upgrades
