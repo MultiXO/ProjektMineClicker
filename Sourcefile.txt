@@ -13,7 +13,7 @@ Settings
 	spritesheet:buildings, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/buildings.jpg
 	spritesheet:currency, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/currency.jpg
 	spritesheet:races, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/races.jpg
-	stylesheet:Style.css
+	stylesheet:https://multixo.github.io/ProjektMineClicker/Style.css
  
 Layout
 	use default
