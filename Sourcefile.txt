@@ -48,6 +48,7 @@ Resources
 	*GoldMultiplier
 		name: Gold multiplier
 		desc: Shows the current multiplier for gold gains.
+		is always:1
 		show max
  
 Buildings
