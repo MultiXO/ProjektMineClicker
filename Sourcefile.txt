@@ -12,6 +12,7 @@ Settings
 	building cost refund:50%
 	spritesheet:buildings, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/buildings.jpg
 	spritesheet:currency, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/currency.jpg
+	spritesheet:races, 48 by 48, https://multixo.github.io/ProjektMineClicker/Assets/races.jpg
 	stylesheet:Style.css
  
 Layout
@@ -48,21 +49,36 @@ Buildings
 	*TEMPLATE
 		on click:anim glow
  
-	*Miner|Miners
-		name:Miner|Miners
-		desc:Digs up Gold for you.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.testtest3
+	*Worker
+		name:Worker
+		desc:Digs up Gold for you.<//><b>Effect:</b><.>Produces 1 Gold every 10 seconds.
 		icon:buildings[0,0]
 		cost:15 Gold
 		on tick:yield 0.1 Gold
 		unlocked
 
-	*Ork|Orks
-		name:Ork|Orks
-		desc:Stronger than a normal miner.<//><b>Effect:</b><.>Produces 1 Gold every 1 seconds. Also produces 1 Diamond every 10 seconds.
+	*Expert
+		name:Expert
+		desc:Has the knowledge to mine more efficiently.<//><b>Effect:</b><.>Produces 1 Gold every second.
 		icon:buildings[1,0]
 		cost:150 Gold
 		on tick:yield 1 Gold
-		on tick:yield 0.1 Diamond
+		unlocked
+
+	*SideManager
+		name:Side Manager
+		desc:Oversees the mining site .<//><b>Effect:</b><.>Produces 10 Gold every second.
+		icon:buildings[2,0]
+		cost:5000 Gold
+		on tick:yield 10 Gold
+		unlocked
+
+	*RegionalManager
+		name:Regional Manager
+		desc:Manage all mining sites in the region.<//><b>Effect:</b><.>Produces 1 Gold every 100 seconds.
+		icon:buildings[3,0]
+		cost:100000 Gold
+		on tick:yield 100 Gold
 		unlocked
  
 Upgrades
