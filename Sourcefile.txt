@@ -26,8 +26,9 @@ Buttons
 		on click:anim icon wobble
 		on click:yield GoldMultiplier * 1 Gold
 		on click:
-		if(random(1,10) == 5) yield 1 PickaxeNormal
-		end
+		$chance1=random(1,10)
+		if (($chance1>0) and ($chance1<3))
+		yield 1 PickaxeNormal
 		icon: 140 by 140, https://multixo.github.io/ProjektMineClicker/Assets/Pickaxe_Button.jpg
 		no text
 		class:bigButton hasFlares
