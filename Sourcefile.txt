@@ -25,7 +25,7 @@ Buttons
 		desc:Let's mine!
 		on click:anim icon wobble
 		on click:yield GoldMultiplier * 1 Gold
-		on click:$chanceItem=random(1,10) yield 1 PickaxeNormal
+		on click:if(random(1,10) == 5) yield 1 PickaxeNormal
 		icon: 140 by 140, https://multixo.github.io/ProjektMineClicker/Assets/Pickaxe_Button.jpg
 		no text
 		class:bigButton hasFlares
@@ -94,19 +94,20 @@ Buildings
 Upgrades
 	*TEMPLATE
 		on click:anim glow
- 
+
+Items:
+
 	*PickaxeNormal
 		name:Slightly better Pickaxe
 		desc:A normal pickaxe. 1.1 x multiplier for Gold gains.
 		icon:buildings[0,1]
-		cost:0 Gold
 		passive:GoldMultiplier is 1.1
 		tag:equipment
 	*PickaxeGood
 		name:A pretty good Pickaxe
 		desc:A normal pickaxe. 1.2 x multiplier for Gold gains.
 		icon:buildings[0,1]
-		cost:1 PickaxeNormal
 		passive:GoldMultiplier is 1.2
 		req:1 PickaxeNormal
 		tag:equipment
+	
