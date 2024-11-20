@@ -95,7 +95,7 @@ Upgrades
 	*TEMPLATE
 		on click:anim glow
 
-Items:
+Items
 
 	*PickaxeNormal
 		name:Slightly better Pickaxe
@@ -103,6 +103,7 @@ Items:
 		icon:buildings[0,1]
 		passive:GoldMultiplier is 1.1
 		tag:equipment
+
 	*PickaxeGood
 		name:A pretty good Pickaxe
 		desc:A normal pickaxe. 1.2 x multiplier for Gold gains.
