@@ -25,17 +25,13 @@ Buttons
 		desc:Let's mine!
 		on click:anim icon wobble
 		on click:yield GoldMultiplier * 1 Gold
-		do click with ItemRoll
+		on click:$chanceItem=random(1,10) yield 1 PickaxeNormal
 		icon: 140 by 140, https://multixo.github.io/ProjektMineClicker/Assets/Pickaxe_Button.jpg
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
 		tooltip origin:bottom
 		tooltip class:red
-
-	*ItemRoll
-		hidden
-		on click:$chanceItem=random(1,10) yield 1 PickaxeNormal
  
 Resources
 	*Gold
