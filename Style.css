@@ -72,11 +72,11 @@
 	width:40%;
 	position:absolute;
 }
-#box-buildings,#box-upgrades
+#box-buildings,#box-upgrades,#box-items
 {
 	top:0px;
 	bottom:0px;
-	width:50%;
+	width:33%;
 	right:0%;
 	overflow-x:hidden;
 	overflow-y:scroll;
